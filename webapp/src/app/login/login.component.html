@@ -1,0 +1,34 @@
+
+
+<div class="container container-table">
+    <div class="row vertical-center-row">
+        <div class="text-center col-md-6 col-md-offset-3">
+            <app-panel title="Spinel HR" subTitle="Login" cssClass="col-md-12">
+                <form [formGroup]="formGroup">
+                    <div class="row">
+                        <div class='col-md-12'>
+                            <div class='form-group form-black label-floating is-empty'>
+                                <md-input-container>
+                                    <input mdInput formControlName='username' placeholder='Username'>
+                                </md-input-container>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='col-md-12'>
+                            <div class='form-group form-black label-floating is-empty'>
+                                <md-input-container>
+                                    <input mdInput formControlName='password' placeholder='Password'>
+                                </md-input-container>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button md-raised-button (click)="loginClicked()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
+                        <button md-raised-button (click)="registerClicked()">register</button>
+                    </div>
+                </form>
+            </app-panel>
+        </div>
+    </div>
+</div>

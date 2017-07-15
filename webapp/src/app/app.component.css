@@ -1,0 +1,30 @@
+.app-sidenav-fab-container {
+  width: 100%;
+  min-height: 400px;
+}
+
+.app-sidenav-fab-container md-sidenav {
+  max-width: 300px;
+}
+
+.app-sidenav-fab-container .md-sidenav-content,
+.app-sidenav-fab-container md-sidenav {
+  display: flex;
+  overflow: visible;
+}
+
+.app-scrolling-content {
+  overflow: auto;
+}
+
+.app-fab {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.spacer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}

@@ -1,0 +1,24 @@
+<app-panel title="Title" subTitle="Sub Title" cssClass="col-md-6">
+  <form [formGroup]="formGroup">
+    <div class="row">
+      <div class='col-md-6'>
+        <div class='form-group form-black label-floating is-empty'>
+          <md-input-container>
+            <input mdInput formControlName='firstName' placeholder='First Name'>
+          </md-input-container>
+        </div>
+      </div>
+      <div class='col-md-6'>
+        <div class='form-group form-black label-floating is-empty'>
+          <md-input-container>
+            <input mdInput formControlName='lastName' placeholder='Last Name'>
+          </md-input-container>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button (click)="httpCall()">httpCall</button>
+      <button (click)="authHttpCall()">authHttpCall</button>
+    </div>
+  </form>
+</app-panel>
